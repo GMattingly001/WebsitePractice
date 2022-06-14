@@ -4,7 +4,8 @@
 <head>
     <title>Creedance Clearwater Revival | About</title>
     <meta name="description" content="This is the decription">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
 </head>
 
 <body>
@@ -16,102 +17,105 @@
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <h1 class="band-name band-name-large">Creedance Clearwater Revival</h1>
+        <h1 class="band-name band-name-large">
+            Creedance Clearwater Revival</h1>
     </header>
     <section class="container content-section">
         <h2 class="section-header">MUSIC</h2>
-        <div class="shop-item">
-                <span class="shop-item-title">Album 1</span>
-            <img class="shop-item-image" src="IMGs/CCC Album 1.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">
+                    Album 1</span>
+                <img class="shop-item-image" src="IMGs/CCC Album 1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">
+                        $12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <div>
-                <span>Album 2</span>
+            <div class="shop-item">
+                <span class="shop-item-title">
+                    Album 2</span>
+                <img class="shop-item-image" src="IMGs/CCC Album 2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">
+                        $14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="IMGs/CCC Album 2.jpg">
-            <div>
-                <span>$14.99</span>
-                <button type="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">
+                    Album 3</span>
+                <img class="shop-item-image" src="IMGs/CCC Album 3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">
+                        $9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <div>
-                <span>Album 3</span>
+            <div class="shop-item">
+                <span class="shop-item-title">
+                    Album 4</span>
+                <img class="shop-item-image" src="IMGs/CCC Album 4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">
+                        $19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="IMGs/CCC Album 3.jpg">
-            <div>
-                <span>$9.99</span>
-                <button type="button">ADD TO CART</button>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">
+                    COFFEE CUP</span>
+                <img class="shop-item-image" src="IMGs/CCC_mug.PNG">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">
+                        $12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <div>
-                <span>Album 4</span>
+            <div class="shop-item">
+                <span class="shop-item-title">
+                    T_SHIRT</span>
+                <img class="shop-item-image" src="IMGs/T_SHIRT.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">
+                        $12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="IMGs/CCC Album 4.jpg">
-            <div>
-                <span>$19.99</span>
-                <button type="button">ADD TO CART</button>
-            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+
+        <div class="cart-row">
+            <span class="cart-item cart-header 
+            cart-column">ITEM</span>
+            <span class="cart-price cart-header 
+            cart-column">PRICE</span>
+            <span class="cart-quantity cart-header 
+            cart-column">QUANTITY</span>
         </div>
 
-        <section>
-            <h2>MERCH</h2>
-        </section>
-        <div>
-            <span>COFFEE CUP</span>
+        <div class="cart-items"></div>
+
+        <div class="cart-total">
+            <span class="cart-total-title">TOTAL</span>
+            <span class="cart-total-price">$0</span>
         </div>
-        <img src="IMGs/CCC_mug.PNG">
-        <div>
-            <span>$12.99</span>
-            <button type="button">ADD TO CART</button>
-        </div>
-        <div>
-            <span>T_SHIRT</span>
-        </div>
-        <img src="IMGs/T_SHIRT.jpg">
-        <div>
-            <span>$12.99</span>
-            <button type="button">ADD TO CART</button>
-        </div>
+        
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
     </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <span>ITEM</span>
-            &lt;&gt;
-            <span>PRICE</span>
-            &lt;&gt;
-            <span>QUANTITY</span>
-        </div>
-        <div>
-            <img src="IMGs/T_SHIRT.jpg" width="100">
-            <span>T-SHIRT</span>
-            &lt;&gt;
-            <span>19.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button type="button">REMOVE</button>
-        </div>
-        <div>
-            <img src="IMGs/CCC Album 3.jpg" width="100">
-            <span>T-SHIRT</span>
-            &lt;&gt;
-            <span>9.99</span>
-            &lt;&gt;
-            <input type="number" value="2">
-            <button type="button">REMOVE</button>
-        </div>
-        <hr>
-        <div>
-            <span>TOTAL</span>
-            <span>$39.97</span>
-        </div>
-        <div>
-            <button type="button">PURCHASE</button>
-        </div>
-    </section>
+
     <footer class="main-footer">
         <div class="container main-footer-container">
-            <h3 class="band-name">Creedance Clearwater Revival</h3>
+            <h3 class="band-name">
+                Creedance Clearwater Revival</h3>
             <ul class="nav footer-nav">
                 <li>
                     <a href="https://www.youtube.com/user/TheOfficialCCR" target="_blank">
